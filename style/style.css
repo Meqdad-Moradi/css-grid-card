@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  width: 100%;
+  line-height: 1.8;
+  font-size: 1rem;
+  background-color: #fafafa;
+}
+
+img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+p:not(:first-child) {
+  margin-top: 1em;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 2.625rem;
+}
+
+.title {
+  color: #1F2937;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: #4B5563;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.body-text {
+  color: #6B7280;
+  font-size: 1rem;
+}
+
+.details {
+  color: #9CA3AF;
+  font-size: 0.875rem;
+}
+
+.small {
+  color: #9CA3AF;
+  font-size: .75rem;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1.5em;
+  text-decoration: none;
+  background-color: #2563EB;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3B82F6;
+}
+
+.main-title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 10%;
+}
+
+.main-title::after {
+  content: '';
+  height: 8px;
+  width: 110%;
+  background-color: #BFDBFE;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.card {
+  -webkit-box-shadow: 0 0 5px -3px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px -3px rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.card .title {
+  text-transform: capitalize;
+}
+
+.card .subtitle {
+  text-transform: capitalize;
+  color: #2563EB;
+}
+/*# sourceMappingURL=style.css.map */
